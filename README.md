@@ -46,6 +46,17 @@ yarn build
 
 We deploy the public version of this site on [Netlify](https://www.netlify.com/). See the [netlify.toml](netlify.toml) for more detail.
 
+### Configuration
+
+To change styling or colour scheme of the web application use `config.json`.
+This file is applied when it gets placed in the root of the deployed web application so it can be fetched with `GET \config.json` request.
+
+Example of such file you can find [here](config.sample.json).
+
+#### Definition of the config.json structure
+
+- `muiTheme` field describes the `material-ui` [theme](https://material-ui.com/customization/theming/).
+
 ## Contribute
 
 Read our [contributing guidelines](CONTRIBUTING.md).

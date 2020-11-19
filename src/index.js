@@ -9,7 +9,7 @@ import { ApolloProvider } from 'react-apollo';
 import { InMemoryCache } from 'apollo-cache-inmemory';
 import { HttpLink } from 'apollo-link-http';
 
-import App from './App';
+import ConfigApp from './ConfigApp';
 import { unregister } from './registerServiceWorker';
 import { graphqlApiUrl } from './configuration';
 
@@ -22,7 +22,7 @@ const client = new ApolloClient({
 
 ReactDOM.render(
   <ApolloProvider client={client}>
-    <App />
+    <ConfigApp />
   </ApolloProvider>,
   document.getElementById('root')
 );

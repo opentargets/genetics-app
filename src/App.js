@@ -13,8 +13,8 @@ import StudyLocusPage from './pages/StudyLocusPage';
 import ImmunobasePage from './pages/ImmunobasePage';
 import withPageAnalytics from './analytics/withPageAnalytics';
 
-const App = () => (
-  <OtUiThemeProvider>
+const App = config => (
+  <OtUiThemeProvider theme={config.muiTheme}>
     <Router>
       <React.Fragment>
         <Route exact path="/" component={withPageAnalytics('home', HomePage)} />

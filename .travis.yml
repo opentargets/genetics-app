@@ -15,4 +15,5 @@ before_script:
   - yarn test:nightwatch:serve
 
 script:
+  - CI=true yarn test
   - yarn test:nightwatch
